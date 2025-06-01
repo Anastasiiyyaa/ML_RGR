@@ -150,7 +150,7 @@ elif page == "Предсказание":
                 input_data = data[feature_names]
                 input_data_scaled = pd.DataFrame(scaler.transform(input_data), columns=feature_names)
 
-                if model_choice == "ML1: Классическая модель":
+                if model_choice == "ML1: Классическая модель" or model_choice == "ML5: ансамблевая модель (стэкинг)":
                     predictions_log = model.predict(input_data_scaled)
                     predictions = np.exp(predictions_log)
                 else:
@@ -192,7 +192,7 @@ elif page == "Предсказание":
                 input_df = pd.DataFrame([validated_data])
                 input_df_scaled = pd.DataFrame(scaler.transform(input_df), columns=feature_names)
                 try:
-                    if model_choice == "ML1: Классическая модель":
+                    if model_choice == "ML1: Классическая модель" or model_choice == "ML5: ансамблевая модель (стэкинг)":
                         prediction_log = model.predict(input_df_scaled)[0]
                         prediction = np.exp(prediction_log)
                     else:
