@@ -4,8 +4,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
-import seaborn as sns
-import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler 
 from catboost import CatBoostRegressor
 
