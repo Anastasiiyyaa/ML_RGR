@@ -204,5 +204,5 @@ elif page == "Предсказание":
 
 st.markdown("---")
 st.markdown("### Полезные ссылки:")
-st.markdown("[GitHub-репозиторий](https://github.com/your_username/your_repository)")
+st.markdown("[GitHub-репозиторий](https://github.com/Anastasiiyyaa/ML_RGR)")
 st.markdown("[Web-сервис на Streamlit Cloud](https://share.streamlit.io/your_username/your_repository)")
