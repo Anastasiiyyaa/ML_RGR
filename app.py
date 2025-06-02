@@ -4,7 +4,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
-from sklearn.preprocessing import StandardScaler 
 from catboost import CatBoostRegressor
 
 st.sidebar.title("РГР по дисциплине «Машинное обучение и большие данные»")
