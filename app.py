@@ -14,7 +14,7 @@ if page == "О разработчике":
     st.image(
         "photo.jpg",
         caption="Фото разработчика",
-        width=300,
+        width=200,
         output_format="JPEG" 
     )
     st.markdown("**ФИО:** Завьялова Анастасия Николаевна")
