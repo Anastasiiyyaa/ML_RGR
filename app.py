@@ -101,7 +101,7 @@ elif page == "Предсказание":
         "ML2: Ансамблевая модель (Бустинг)": "best_gbr_model.pkl",
         "ML3: Продвинутый градиентный бустинг (CatBoost)": "catboost_model.cbm",
         "ML4: Ансамблевая модель (Бэггинг)": "best_bag_reg_model.pkl",
-        "ML5: ансамблевая модель (стэкинг)": "stack_reg_model.pkl",
+        "ML5: ансамблевая модель (Cтэкинг)": "stack_reg_model.pkl",
         "ML6: глубокая полносвязная нейронная сеть": "best_model_hyperopt.pkl"
     }
     model_file = model_files.get(model_choice)
