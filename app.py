@@ -102,7 +102,7 @@ elif page == "Предсказание":
         "ML3: Продвинутый градиентный бустинг (CatBoost)": "catboost_model.cbm",
         "ML4: Ансамблевая модель (Бэггинг)": "best_bag_reg_model.pkl",
         "ML5: ансамблевая модель (стэкинг)": "stack_reg_model.pkl",
-        "ML6: глубокая полносвязная нейронная сеть": "kdd.pkl"
+        "ML6: глубокая полносвязная нейронная сеть": "best_model_hyperopt.pkl"
     }
     model_file = model_files.get(model_choice)
 
@@ -202,4 +202,4 @@ elif page == "Предсказание":
 st.markdown("---")
 st.markdown("### Полезные ссылки:")
 st.markdown("[GitHub-репозиторий](https://github.com/Anastasiiyyaa/ML_RGR)")
-st.markdown("[Web-сервис на Streamlit Cloud](https://share.streamlit.io/your_username/your_repository)")
+st.markdown("[Web-сервис на Hugging Face](https://huggingface.co/spaces/Anastasiya3838/RGRML)")
