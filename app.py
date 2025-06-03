@@ -93,7 +93,7 @@ elif page == "Предсказание":
                                  "ML2: Ансамблевая модель (Бустинг)",
                                  "ML3: Продвинутый градиентный бустинг (CatBoost)",
                                  "ML4: Ансамблевая модель (Бэггинг)",
-                                 "ML5: Ансамблевая модель (стэкинг)",
+                                 "ML5: Ансамблевая модель (Стэкинг)",
                                  "ML6: Глубокая полносвязная нейронная сеть"])
 
     model_files = {
@@ -101,8 +101,8 @@ elif page == "Предсказание":
         "ML2: Ансамблевая модель (Бустинг)": "best_gbr_model.pkl",
         "ML3: Продвинутый градиентный бустинг (CatBoost)": "catboost_model.cbm",
         "ML4: Ансамблевая модель (Бэггинг)": "best_bag_reg_model.pkl",
-        "ML5: ансамблевая модель (Cтэкинг)": "stack_reg_model.pkl",
-        "ML6: глубокая полносвязная нейронная сеть": "best_model_hyperopt.pkl"
+        "ML5: Ансамблевая модель (Cтэкинг)": "stack_reg_model.pkl",
+        "ML6: Глубокая полносвязная нейронная сеть": "best_model_hyperopt.pkl"
     }
     model_file = model_files.get(model_choice)
 
@@ -147,7 +147,7 @@ elif page == "Предсказание":
                 input_data = data[feature_names]
                 input_data_scaled = pd.DataFrame(scaler.transform(input_data), columns=feature_names)
 
-                if model_choice == "ML1: Классическая модель" or model_choice == "ML5: ансамблевая модель (стэкинг)":
+                if model_choice == "ML1: Классическая модель" or model_choice == "ML5: Ансамблевая модель (Стэкинг)":
                     predictions_log = model.predict(input_data_scaled)
                     predictions = np.exp(predictions_log)
                 else:
@@ -189,7 +189,7 @@ elif page == "Предсказание":
                 input_df = pd.DataFrame([validated_data])
                 input_df_scaled = pd.DataFrame(scaler.transform(input_df), columns=feature_names)
                 try:
-                    if model_choice == "ML1: Классическая модель" or model_choice == "ML5: ансамблевая модель (стэкинг)":
+                    if model_choice == "ML1: Классическая модель" or model_choice == "ML5: Ансамблевая модель (Стэкинг)":
                         prediction_log = model.predict(input_df_scaled)[0]
                         prediction = np.exp(prediction_log)
                     else:
